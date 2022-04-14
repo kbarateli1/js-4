@@ -29,82 +29,105 @@
 
 // 1. 
  
-// function evenNumbers(numbers) {
-//     if (numbers % 2 == 0) {
-//         return true;
-//     }
-//     return false;
-// }
+ function evenNumbers(numbers) {
+        if (numbers % 2 == 0) {
+        console.log("even number");
+ return true;
+  }
+        console.log("odd number");
+        return false;
+ }
 
-//     let evenNumbers = 7;
-//     let result = evenNumbers(numbers);
-//     console.log(result)
-
+         let numbers = 7;
+         let result = evenNumbers(numbers);
+         console.log(result)
 
 //2. 
+    function rectangleSizes(a,b) {
+    let s = a*b
+    console.log(s);
+    return(s);
+ }
 
-// function rectangleSizes(a,b) {
-//     console.log(a*b);
-//     return(a*b);
-// }
-
-// rectangleSizes(5,10);
-
-
-//3.
-
-// function squareSizes(a) {
-  
-//     console.log(a*a);
-//     return 
-//  }
-// squareSizes(5);
-
-//4.
-// ამ დავალებას კარგად ვერ მივხვდი
-
-Math.random();
+ rectangleSizes(5,10);
 
 
-5. // 5.
+ 3.
+
+function squareSizes(a) {
+    let s = a*a;
+    return (s);
+}
+
+ squareSizes(5);
+
+
+// 4. //ეს დავალება ვერ გავაკეთე
+// // Math.random() - არის ფუნქცია, რომელიც აბრუნებს შემთხვევით რიცხვს 0-დან 1-მდე.
+// // Math.floor() - ამრგვალებს რიცხვს ქვემოთ, მაგალითად Math.floor(4.9) აბრუნებს 4-ს.
+// // Math.round() - ამრგვალებს რიცხვს უახლოეს მთელამდე.
+// // დაწერეთ ფუნქცია, 
+// // რომელიც Math.random() ფუნქციის გამოყენებით დააგენერირებს დ
+// // ა დააბრუნებს 0-დან 100-მდე შემთხვევით რიცხვს..
+
+
+
+// function randomNumber() {
+//     let randomNumber = Math.floor(Math.random() * 100);
+//     console.log(randomNumber);
+//     return (randomNumber)
+//   }
+//   randomNumber();
+
+
+
+// 5.
 let userArr=[
-    {
-        userName:"keti",
+  {
+       userName:"keti",
         userAge:27,
-    },
+   },
     {
         userName:"inga",
-        userAge:28,
-    },
-    {
+       userAge:28,
+      },
+         {
         userName:"mariam",
-        userAge:28,
-    },
-    {
-        userName:"nutsa",
-        userAge:27,
-    },
-    {
-        userName:"gurami",
-        userAge:25,
-    },
+         userAge:28,
+     },
+     {
+         userName:"nutsa",
+         userAge:27,
+     },
+     {
+         userName:"gurami",
+         userAge:25,
+     },
 
-];
-// console.log(userArr)
+ ];
+  console.log(userArr)
 
-// let minArrage = userArr.filter((el) => {
-// 	return el.minArrage <27 ;
-// });
-// console.log(minArrage);
-
-let minArrage = userArr.filter(el);
-
-function arrayMin(userArr) {
-    return userArr.reduce();
-  }
+ let minArrage = userArr.filter((el) => {
+     return el.minArrage <25;
+ });
+ console.log(minArrage);
 
 
+ 6. 
+ function getCurrencySymbolFromCode (params) {
+     if (currency == "usd") {
+         console.log("$");
+         return ("$");
+     } else if  (currency == "eur"){
+        console.log("€");
+        return ("€");
+    } else if (currency == "gel") {
+        console.log("ლ");
+        return ("ლ");
+    }
+ }
 
+ getCurrencySymbolFromCode("gel");
 
 
 
